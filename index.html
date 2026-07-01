@@ -1,12 +1,62 @@
-<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Surprise ❤️</title>
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Milad ❤️ Nastaran</title>
 <style>
-body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(#0b1026,#301040);overflow:hidden;font-family:sans-serif;color:#fff}
-#c{position:relative;text-align:center;z-index:2}button{padding:16px 28px;border:none;border-radius:30px;background:#ff4f87;color:#fff;font-size:20px;cursor:pointer}
-#msg{display:none;max-width:700px;background:rgba(255,255,255,.1);padding:20px;border-radius:18px;margin-top:20px;line-height:2}
-.heart{position:absolute;color:#ff6b9d;animation:fall linear infinite}
-@keyframes fall{from{transform:translateY(-10vh)}to{transform:translateY(110vh)}}
-</style></head><body><div id="c"><h1>✨ یک سورپرایز برای تو ✨</h1><button onclick="m()">برای دیدن سورپرایز کلیک کن ❤️</button><div id="msg"><h2>به عزیزترین آدم زندگی‌ام 💖</h2><p>اگر قرار بود هزار بار دیگر زندگی را از نو شروع کنم، باز هم دلم می‌خواست مسیرم به تو برسد. حضورت برای من آرامش، امید و لبخند است. ممنونم که کنار منی و هر روز دنیا را قشنگ‌تر می‌کنی. دوستت دارم، امروز، فردا و تمام روزهای بعد. ❤️</p></div></div>
+body{margin:0;overflow:hidden;background:radial-gradient(circle,#1a2148,#090b18);font-family:Tahoma;color:#fff}
+#stars,#hearts{position:fixed;inset:0}
+.star,.heart{position:absolute}
+.star{width:2px;height:2px;background:#fff;animation:tw 2s infinite alternate}
+@keyframes tw{to{opacity:.2;transform:scale(1.8)}}
+.heart{color:#ff6b9d;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh)}}
+#center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+#intro,#heartWrap,#letter,#secret{display:none}
+#bigHeart{font-size:90px;cursor:pointer;animation:beat 1s infinite}
+@keyframes beat{50%{transform:scale(1.15)}}
+button{padding:14px 24px;border:none;border-radius:30px;background:#ff4f87;color:#fff;font-size:20px;cursor:pointer}
+.card{max-width:700px;background:rgba(255,255,255,.1);padding:20px;border-radius:20px;backdrop-filter:blur(6px)}
+#final{display:none;font-size:34px;margin-top:20px;color:#ffd3e6}
+</style></head><body>
+<div id="stars"></div><div id="hearts"></div>
+<div id="center">
+<div id="intro"><h1>یک نفر از ته دلش دوستت دارد... ❤️</h1></div>
+<div id="heartWrap"><div id="bigHeart">❤️</div><div>قلب را لمس کن...</div></div>
+<div id="letter" class="card">
+<h2>برای عزیزترین آدم زندگی‌ام، Nastaran ❤️</h2>
+<div id="counter"></div><br>
+<p id="text"></p>
+<button onclick="showFinal()">❤️ پایان نامه ❤️</button>
+</div>
+<div id="final">
+Forever ❤️<br>Milad & Nastaran
+</div>
+<div id="secret" class="card"><h3>پیام مخفی 💖</h3><p>نسترن... شاید سال‌ها بگذرد، اما احساسی که به تو دارم هیچ‌وقت کم‌رنگ نمی‌شود. تو بهترین اتفاق زندگی منی. دوستت دارم، تا همیشه... ❤️<br><br>Milad</p></div>
+</div>
 <script>
-function m(){document.getElementById('msg').style.display='block';}
-for(let i=0;i<40;i++){let h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';h.style.top='-'+Math.random()*100+'vh';h.style.animationDuration=(5+Math.random()*8)+'s';h.style.fontSize=(15+Math.random()*25)+'px';document.body.appendChild(h);}
+for(let i=0;i<120;i++){let s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*2+'s';document.getElementById('stars').appendChild(s);}
+for(let i=0;i<50;i++){let h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';h.style.top='-10vh';h.style.fontSize=(12+Math.random()*25)+'px';h.style.animationDuration=(6+Math.random()*8)+'s';document.getElementById('hearts').appendChild(h);}
+setTimeout(()=>{intro.style.display='block';},500);
+setTimeout(()=>{intro.style.display='none';heartWrap.style.display='block';},3500);
+let taps=0;
+bigHeart.onclick=()=>{taps++; if(taps==1){heartWrap.style.display='none';letter.style.display='block';type();} if(taps==3){secret.style.display='block';}}
+const msg=`نسترن عزیزم...
+
+از روزی که در 26/11/2024 وارد زندگی من شدی، دنیا برای من رنگ دیگری گرفت.
+
+تو آرامش قلبم، دلیل لبخندهایم و زیباترین اتفاق زندگی منی.
+
+اگر هزار بار دیگر هم فرصت زندگی کردن داشته باشم، باز هم دلم می‌خواهد مسیرم به تو برسد.
+
+دوستت دارم...
+امروز، فردا و تا همیشه...
+
+با تمام قلبم
+Milad ❤️`;
+let i=0;
+function type(){let t=document.getElementById('text');let it=setInterval(()=>{t.textContent+=msg[i++];if(i>=msg.length)clearInterval(it);},35);}
+function showFinal(){final.style.display='block';window.scrollTo(0,document.body.scrollHeight);}
+const start=new Date('2024-11-26');
+function upd(){let d=Math.floor((new Date()-start)/86400000);counter.textContent='💖 '+d+' روز از آشنایی ما گذشته است.';}
+upd();setInterval(upd,60000);
 </script></body></html>

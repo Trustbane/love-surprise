@@ -6,9 +6,12 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+content="width=device-width,initial-scale=1.0">
 
 <title>Milad ❤️ Nastaran</title>
+
+<meta name="theme-color"
+content="#081229">
 
 <link rel="preconnect"
 href="https://fonts.googleapis.com">
@@ -17,7 +20,7 @@ href="https://fonts.googleapis.com">
 href="https://fonts.gstatic.com"
 crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
 rel="stylesheet">
 
 <link rel="stylesheet"
@@ -27,73 +30,147 @@ href="style.css">
 
 <body>
 
+<!-- LOADER -->
+
+<div id="loader">
+
+<div class="loader-heart">
+
+❤️
+
+</div>
+
+<p>
+
+Loading Love...
+
+</p>
+
+</div>
+
+<!-- BACKGROUND -->
+
+<div id="background">
+
 <div id="stars"></div>
 
-<div id="roseContainer"></div>
+<div id="moon"></div>
 
-<div id="heartRain"></div>
+<div id="clouds"></div>
 
-<div class="overlay"></div>
+<div id="rose-petals"></div>
 
-<section id="intro">
+<div id="heart-rain"></div>
 
-<div class="glass">
+</div>
 
-<h1 id="title">
+<!-- MUSIC BUTTON -->
+
+<div id="musicButton">
+
+🔇
+
+</div>
+
+<!-- HOME -->
+
+<section
+id="home"
+class="screen active">
+
+<div class="glass-card">
+
+<h1>
 
 Milad
 
-<span>❤️</span>
+<span>
+
+❤️
+
+</span>
 
 Nastaran
 
 </h1>
 
-<p class="subtitle">
+<p>
 
-Every Love Story is Beautiful...
+Every Love Story Is Beautiful...
 
-But Ours is My Favorite.
+But Ours Is My Favorite.
 
 </p>
 
-<div id="countdown">
+<div id="counter">
 
-<div class="box">
+<div class="counter-box">
 
-<span id="days">0</span>
+<span id="days">
 
-<small>روز</small>
+0
 
-</div>
+</span>
 
-<div class="box">
+<small>
 
-<span id="hours">0</span>
+روز
 
-<small>ساعت</small>
-
-</div>
-
-<div class="box">
-
-<span id="minutes">0</span>
-
-<small>دقیقه</small>
+</small>
 
 </div>
 
-<div class="box">
+<div class="counter-box">
 
-<span id="seconds">0</span>
+<span id="hours">
 
-<small>ثانیه</small>
+0
+
+</span>
+
+<small>
+
+ساعت
+
+</small>
+
+</div>
+
+<div class="counter-box">
+
+<span id="minutes">
+
+0
+
+</span>
+
+<small>
+
+دقیقه
+
+</small>
+
+</div>
+
+<div class="counter-box">
+
+<span id="seconds">
+
+0
+
+</span>
+
+<small>
+
+ثانیه
+
+</small>
 
 </div>
 
 </div>
 
-<button id="startBtn">
+<button id="startButton">
 
 شروع سورپرایز ❤️
 
@@ -103,23 +180,48 @@ But Ours is My Favorite.
 
 </section>
 
-<section id="scene1">
+<!-- SCENE 1 -->
+
+<section
+id="sceneOne"
+class="screen">
+
+<div class="message-box">
 
 <h2>
 
 یک نفر...
 
+</h2>
+
+<h1>
+
 از ته دلش دوستت دارد...
 
 ❤️
 
-</h2>
+</h1>
+
+<p>
+
+و آن یک نفر...
+
+همین حالا منتظر است
+که این قلب را لمس کنی.
+
+</p>
+
+</div>
 
 </section>
 
-<section id="scene2">
+<!-- SCENE 2 -->
 
-<div id="bigHeart">
+<section
+id="sceneTwo"
+class="screen">
+
+<div id="magicHeart">
 
 ❤️
 
@@ -132,26 +234,53 @@ But Ours is My Favorite.
 </p>
 
 </section>
+<!-- LETTER -->
 
-<section id="letterSection">
+<section
+id="letterScene"
+class="screen">
 
 <div class="envelope">
 
-<div class="cover"></div>
+<div class="envelope-back"></div>
 
-<div class="paper">
+<div class="envelope-front"></div>
+
+<div class="letter">
+
+<div class="letter-header">
+
+❤️
+
+برای عزیزترین آدم زندگی من
+
+❤️
+
+</div>
 
 <h2>
 
-برای عزیزترین آدم زندگی‌ام
-
-❤️ Nastaran ❤️
+Nastaran
 
 </h2>
 
-<div id="typedText"></div>
+<div id="typedMessage">
 
-<button id="finishBtn">
+<!-- متن اینجا توسط JavaScript تایپ می‌شود -->
+
+</div>
+
+<div class="signature">
+
+با تمام قلبم
+
+<br>
+
+Milad ❤️
+
+</div>
+
+<button id="nextButton">
 
 ادامه ❤️
 
@@ -163,7 +292,13 @@ But Ours is My Favorite.
 
 </section>
 
-<section id="ending">
+<!-- FINAL -->
+
+<section
+id="finalScene"
+class="screen">
+
+<div class="glass-card final-card">
 
 <h1>
 
@@ -179,7 +314,7 @@ Milad ❤️ Nastaran
 
 <p>
 
-26 Nov 2024
+26 November 2024
 
 ∞
 
@@ -187,46 +322,107 @@ Forever
 
 </p>
 
-</section>
+<div class="loveLine">
 
-<section id="secret">
+هر بار که این صفحه را باز کنی...
 
-<div class="glass">
+یادت باشد...
 
-<h2>
-
-یک پیام مخفی...
+یک نفر با تمام قلبش دوستت دارد.
 
 ❤️
 
-</h2>
+</div>
 
-<p>
+<button id="secretButton">
 
-اگر تا اینجا موندی...
+یه چیز دیگه...
 
-یعنی واقعا کنجکاوی...
+👀
 
-پس اینو بدون...
-
-تو بهترین اتفاق زندگی منی.
-
-دوستت دارم...
-
-تا همیشه.
-
-❤️
-
-Milad
-
-</p>
+</button>
 
 </div>
 
 </section>
 
+<!-- SECRET -->
+
+<section
+id="secretScene"
+class="screen">
+
+<div class="secretCard">
+
+<div class="secretGlow"></div>
+
+<h1>
+
+فقط برای نسترن...
+
+❤️
+
+</h1>
+
+<p>
+
+اگر تا اینجا موندی...
+
+یعنی واقعاً این صفحه را با دقت دیدی.
+
+پس می‌خواهم یک چیز را فقط به خودت بگویم...
+
+</p>
+
+<p>
+
+تو آرامش قلب منی...
+
+تو دلیل لبخندهای منی...
+
+و اگر هزار بار دیگر هم زندگی را از نو شروع کنم...
+
+باز هم دلم می‌خواهد مسیرم به تو برسد.
+
+</p>
+
+<p>
+
+دوستت دارم...
+
+بیشتر از چیزی که بتوانم با کلمات توضیح بدهم.
+
+</p>
+
+<div class="bigLove">
+
+❤️
+
+</div>
+
+<h2>
+
+Milad
+
+</h2>
+
+</div>
+
+</section>
+<!-- FIREWORKS -->
+<div id="fireworks"></div>
+
+<!-- FLOATING PARTICLES -->
+<div id="particles"></div>
+
+<!-- CURSOR HEART -->
+<div id="cursor-heart"></div>
+
+<!-- LOADING OVERLAY -->
+<div id="transition"></div>
+
+<!-- JAVASCRIPT -->
 <script src="script.js"></script>
 
 </body>
-
 </html>

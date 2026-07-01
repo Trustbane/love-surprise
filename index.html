@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Surprise ❤️</title>
+<style>
+body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(#0b1026,#301040);overflow:hidden;font-family:sans-serif;color:#fff}
+#c{position:relative;text-align:center;z-index:2}button{padding:16px 28px;border:none;border-radius:30px;background:#ff4f87;color:#fff;font-size:20px;cursor:pointer}
+#msg{display:none;max-width:700px;background:rgba(255,255,255,.1);padding:20px;border-radius:18px;margin-top:20px;line-height:2}
+.heart{position:absolute;color:#ff6b9d;animation:fall linear infinite}
+@keyframes fall{from{transform:translateY(-10vh)}to{transform:translateY(110vh)}}
+</style></head><body><div id="c"><h1>✨ یک سورپرایز برای تو ✨</h1><button onclick="m()">برای دیدن سورپرایز کلیک کن ❤️</button><div id="msg"><h2>به عزیزترین آدم زندگی‌ام 💖</h2><p>اگر قرار بود هزار بار دیگر زندگی را از نو شروع کنم، باز هم دلم می‌خواست مسیرم به تو برسد. حضورت برای من آرامش، امید و لبخند است. ممنونم که کنار منی و هر روز دنیا را قشنگ‌تر می‌کنی. دوستت دارم، امروز، فردا و تمام روزهای بعد. ❤️</p></div></div>
+<script>
+function m(){document.getElementById('msg').style.display='block';}
+for(let i=0;i<40;i++){let h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';h.style.top='-'+Math.random()*100+'vh';h.style.animationDuration=(5+Math.random()*8)+'s';h.style.fontSize=(15+Math.random()*25)+'px';document.body.appendChild(h);}
+</script></body></html>
